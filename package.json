@@ -1,0 +1,64 @@
+{
+  "name": "@temp-mail-io/sdk",
+  "version": "0.1.0",
+  "description": "Official Node.js SDK for the temp-mail.io API",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "smoke": "tsx scripts/smoke.ts",
+    "example": "tsx examples/basic.ts",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "keywords": [
+    "temp-mail",
+    "temp-mail.io",
+    "disposable-email",
+    "email",
+    "sdk",
+    "api"
+  ],
+  "homepage": "https://temp-mail.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/temp-mail-io/temp-mail-node"
+  },
+  "bugs": {
+    "url": "https://github.com/temp-mail-io/temp-mail-node/issues"
+  },
+  "author": "temp-mail.io",
+  "license": "MIT"
+}
