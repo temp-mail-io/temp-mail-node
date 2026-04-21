@@ -54,7 +54,7 @@
   "homepage": "https://temp-mail.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/temp-mail-io/temp-mail-node"
+    "url": "git+https://github.com/temp-mail-io/temp-mail-node.git"
   },
   "bugs": {
     "url": "https://github.com/temp-mail-io/temp-mail-node/issues"
